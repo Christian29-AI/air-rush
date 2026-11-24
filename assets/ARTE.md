@@ -1,0 +1,9 @@
+# Fondo del menú
+
+Archivo final: `assets/arcade_menu.png`.
+
+Creado con la herramienta integrada ImageGen, usando la imagen proporcionada por el usuario como referencia visual. No se usó el modo CLI/API. La ilustración es únicamente el fondo: los botones, textos y estados interactivos se implementan en Godot.
+
+## Prompt final
+
+Use case: stylized-concept. Asset type: pixel art backdrop for an interactive Godot air hockey main menu, landscape 16:10. Reference image supplied: use its arcade room style, composition, vivid blue palette and retro pixel rendering as reference. Create a NEW polished background plate with absolutely NO TEXT, NO LETTERS, NO LOGOS, NO BUTTONS, NO MENU, NO UI. Keep the center vertical 42 percent of the image mostly empty deep navy blue wall and floor so a real interactive menu can overlay it; keep upper central 70 percent width empty dark wall for a separate title. Scene: symmetrical richly detailed blue retro arcade room with rows of colorful glowing arcade cabinets on the far left and far right sides (outer 28 percent), two small youthful pixel art arcade characters near side machines, warm orange hanging pendant lights in upper corners, cobalt tiled reflective perspective floor. Large cropped red air hockey mallet and red table rim in bottom left, blue mallet and blue table rim in bottom right, never blocking central column. Bright cyan screen reflections, indigo brick walls and pipes, authentic crisp chunky 16-bit pixel art, masterful limited pixel palette and dithering, warm accents amid sapphire shadows. Each pixel intentional, no blurry gradients, no photorealism, no readable text even on cabinets. Match the supplied reference visual richness and room perspective while leaving all interactive controls and title absent. Output a single landscape background.

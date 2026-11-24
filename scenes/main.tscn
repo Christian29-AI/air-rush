@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dx57a6u2i1na5"]
+
+[ext_resource type="Script" uid="uid://c2tde1mb2b2vh" path="res://scripts/game.gd" id="1"]
+[ext_resource type="Script" uid="uid://c023golb726ks" path="res://scripts/arena.gd" id="2"]
+[ext_resource type="Script" uid="uid://mxkmwrsqrfqa" path="res://scripts/paddle.gd" id="3"]
+[ext_resource type="Script" uid="uid://dhhpqpbli7xqv" path="res://scripts/puck.gd" id="4"]
+[ext_resource type="Script" uid="uid://tkemronux0om" path="res://scripts/main_menu.gd" id="5"]
+[ext_resource type="Script" uid="uid://dibljlhvjx6e8" path="res://scripts/power_system.gd" id="6"]
+[ext_resource type="Script" uid="uid://bfo4ug8aknbpn" path="res://scripts/combo_system.gd" id="7"]
+[ext_resource type="Script" uid="uid://ccgecffnw8wc7" path="res://audio/arcade_audio.gd" id="8"]
+[ext_resource type="Script" uid="uid://d3j8yi7cqreta" path="res://ui/game_hud.gd" id="9"]
+[ext_resource type="Script" uid="uid://bbqhqp6radnxe" path="res://scripts/mid_game.gd" id="10"]
+[ext_resource type="Script" uid="uid://bh7vw1trxba18" path="res://scripts/mini_pucks.gd" id="11"]
+
+[node name="AirHockey" type="Node2D" unique_id=2083698179]
+script = ExtResource("1")
+
+[node name="Arena" type="Node2D" parent="." unique_id=1089691523]
+script = ExtResource("2")
+
+[node name="Player" type="Node2D" parent="." unique_id=1261488833]
+position = Vector2(345, 396)
+script = ExtResource("3")
+tint = Color(1, 0.3, 0.38, 1)
+
+[node name="Computer" type="Node2D" parent="." unique_id=638279637]
+position = Vector2(935, 396)
+script = ExtResource("3")
+tint = Color(0.2, 0.73, 1, 1)
+
+[node name="Puck" type="Node2D" parent="." unique_id=1886129810]
+position = Vector2(640, 396)
+script = ExtResource("4")
+
+[node name="Powers" type="Node" parent="." unique_id=271770999]
+script = ExtResource("6")
+
+[node name="Combos" type="Node" parent="." unique_id=703172870]
+script = ExtResource("7")
+
+[node name="ArcadeAudio" type="Node" parent="." unique_id=2059835201]
+script = ExtResource("8")
+
+[node name="MidGame" type="Node2D" parent="." unique_id=1880121047]
+z_index = 3
+script = ExtResource("10")
+
+[node name="MiniPucks" type="Node2D" parent="." unique_id=1078297680]
+z_index = 2
+script = ExtResource("11")
+
+[node name="Interface" type="Node2D" parent="." unique_id=75473236]
+z_index = 10
+script = ExtResource("9")
+
+[node name="MainMenu" type="Control" parent="." unique_id=698617159]
+z_index = 30
+layout_mode = 3
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 1277.0
+offset_bottom = 798.0
+script = ExtResource("5")
